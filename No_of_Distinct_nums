@@ -1,0 +1,23 @@
+# Your code here 
+def dis_num(a,b): 
+  temp = 0
+  a_list = []
+  a_list.append(a)
+  for i in range(b+1):
+    if ( i == 0):
+      temp = a
+    else: 
+      for j in range(i,len(a_list)+1):
+        temp = a_list[j-1]
+        a_list.append(temp + 3)
+        a_list.append(temp - 3)
+        a_list.append(temp * 2)
+  
+  
+  a_list = set(a_list) 
+  print(len(a_list)) 
+
+t = int(input())
+for i in range(t):
+  a , b = map(int,input().split())
+  dis_num(a,b)
