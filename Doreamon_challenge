@@ -1,0 +1,13 @@
+def EqualOrNot(h1,h2,v1,v2):
+  #Enter your code here  
+  if(h1 == h2): 
+    return True 
+  b = 100000
+  while(b): 
+    h1 = h1 + v1 
+    h2 = h2 + v2 
+    b = b - 1
+    if (h1 == h2):
+      return True
+    
+  return False
