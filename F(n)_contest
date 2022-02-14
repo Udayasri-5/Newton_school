@@ -1,0 +1,14 @@
+#include <bits/stdc++.h> // header file includes every Standard library
+using namespace std;
+#define m 1000000007
+int main() {
+
+	// Your code here
+  int n,f;
+  cin>>n>>f;
+  for(int i = n;--i>0;){
+     f=((f&1)==0)?f>>1:(m+f)>>1;
+  } 
+  cout<<f;
+	return 0;
+}
