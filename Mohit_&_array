@@ -1,0 +1,10 @@
+# Your code here 
+n= int(input()) 
+lis = list(map(int,input().split()))[:n]
+lis.sort()  
+a = [x for x in range(lis[0],lis[-1]+1) if x not in lis]
+if(len(a)== 0):
+    print(lis[-1]+1) 
+else:
+	for i in a:
+		print(i,end=" ")
