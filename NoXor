@@ -1,0 +1,7 @@
+# Your code here
+n = int(input()) 
+lis = list(map(int,input().split()))[:n]
+sum = 0
+for i in range(n):
+	sum += (n-(i+1)) ^ lis[i] 
+print(sum)
